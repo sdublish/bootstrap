@@ -5,7 +5,7 @@
   <title>Bootstrap Exercise</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
+<link rel="stylesheet" href="styles.css">
   <!-- Load our stylesheet -->
 
 </head>
@@ -13,8 +13,13 @@
 <body>
 
 <!-- Code goes here. -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#">Ubermelon</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 <ul class="navbar-nav">
       <li class="nav-item">
@@ -40,7 +45,9 @@
         <li class="nav-item">
         <a class="nav-link" href="#">Profile </a>
     </li>
-</ul></nav>
+</ul>
+</div>
+</nav>
 
 <div class="container-fluid">
     <div class="row">
@@ -50,15 +57,47 @@
 </div>
 <br><br><br>
     <div class="row">
-        <div class="col-4 text-center"> <b>Award Winning</b> <br>
+        <div class="col-4 text-center"> <i class="fas fa-trophy"></i>
+        <b>Award Winning</b> <br>
         Don't take our word for it. See all the awards our melons have earned</div>
-        <div class="col-4 text-center"> <b>Huge Selection</b> <br> We import melons from all over the world, ensuring we have every melon you could possibly desire. </div>
-        <div class="col-4 text-center"><b> Certified Sustainable</b> <br> Our melons are sourced only from sustainable, organic local farmers. These are the healthiest melons you'll ever eat. </div>
+        <div class="col-4 text-center"><i class="fas fa-globe"></i> <b>Huge Selection</b> <br> We import melons from all over the world, ensuring we have every melon you could possibly desire. </div>
+        <div class="col-4 text-center"> <i class="fas fa-certificate"></i> <b> Certified Sustainable</b> <br> Our melons are sourced only from sustainable, organic local farmers. These are the healthiest melons you'll ever eat. </div>
 </div>
+<br><br>
+<div class="row d-none d-md-block d-xl-none">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col"> Melon </th>
+      <th scope="col"> Price </th>
+      <th scope="col"> Color </th>
+      <th scope="col"> Country </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Canteloupe </td>
+      <td> $4.99/lb </td>
+      <td> Tan </td>
+      <td> Italy </td>
+    </tr>
+    <tr>
+      <td> Honeydew </td>
+      <td> $3.99/lb </td>
+      <td> White/Green </td>
+      <td> France/Algeria </td>
+    </tr>
+    <tr>
+      <td> Casaba </td>
+      <td> $7.99/lb </td>
+      <td> Yellow </td>
+      <td> Turkey </td>
+    </tr>
+  </tbody>
 
-
-
-
+</table>
+</div>
+</div>
 
 
 
